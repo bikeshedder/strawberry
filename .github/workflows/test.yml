@@ -48,7 +48,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ${{ matrix.cache-path }}
-          key: ${{ runner.os }}-py-${{ matrix.python-version }}-poetry-${{ hashFiles('poetry.lock') }}
+          key: ${{ runner.os }}-py-${{ matrix.python-version }}-poetry-${{ hashFiles('poetry.lock') }}-2
           restore-keys: ${{ runner.os }}-py-${{ matrix.python-version }}-poetry-
 
       - name: Install dependencies
